@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pretty Sound Loud</title>
+		<script src="https://kit.fontawesome.com/fd1ef6b2c1.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrap-hamburg">
+			<input type="checkbox" id="menu-toggle" onChange="activate()">
+			<div id="hamburg"><div></div></div>
+		</div>
+		<div id="box-menu">
+			<a href="https://www.youtube.com/channel/UC8FGhJXD5JqUI5QS3jGmWQg/" target="_blank" id="i-yt"><i class="fab fa-youtube"></i></a>
+			<a href="https://www.facebook.com/prettysoundloud/" target="_blank" id="i-fb"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/prettysoundloud/" target="_blank" id="i-ig"><i class="fab fa-instagram"></i></a>
+			<a href="https://twitter.com/PrettySoundLoud"target="_blank" id="i-tw"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/company/pretty-sound-loud/about/" target="_blank" id="i-li"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		<div id="box-social">
+		</div>
+		<div id="box-empty">
+		</div>
+		<div id="box-feature">
+			<img src="images/logo_PSL2020.png" id="logo-main">
+			<div>
+				<h1>Pretty Sound Loud</h1>
+			</div>
+		</div>
+		<div id="box-mission"><p id="mission">We are an independent production company, specializing in short films, photography, and commercial work.</p></div>
+		<div id="container" class="container">
+			<h2>Services</h2>
+			<div id="services" class="services">
+				<div class="service">
+					<h3>Legacy Films</h3>
+					<p>Storytelling solutions for your family, friends, and community</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, eum quasi natus nemo officia libero cumque explicabo reiciendis ab eaque soluta dolore expedita nesciunt vel perferendis! Ea placeat iusto dicta!</p>
+					<p><a href="#" class="btn">Get a Quote</a></p>
+				</div>
+				<div class="service">
+					<h3>Events</h3>
+					<p>Weddings, Cultural Events, Etc.</p>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nisi nobis ea corrupti recusandae dignissimos libero, aperiam aliquid, non natus delectus nemo ipsum officia animi odit eaque sapiente est possimus?</p>
+					<p><a href="#" class="btn">Get a Quote</a></p>
+				</div>
+				<div class="service">
+					<h3>Music Videos</h3>
+					<p>Innovative, made-to-order music videos that fit your budget</p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam adipisci aliquam accusamus eligendi ea mollitia distinctio iusto labore ipsam! Aliquam autem nisi et magnam. Vitae, cum. Nihil ducimus mollitia recusandae.</p>
+					<p><a href="#" class="btn">Get a Quote</a></p>
+				</div>
+				<div class="service">
+					<h3>Promotions</h3>
+					<p>Stylized content to match your company's theme and mission</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eos, odit quae ipsa dignissimos explicabo soluta minima officia magnam dolore ex, quibusdam, repellendus cum ut vitae quos libero perferendis laudantium.</p>
+					<p><a href="#" class="btn">Get a Quote</a></p>
+				</div>
+			</div>
+			<h2>Blog</h2>
+			<div id="medium">
+				<p>The <em>Pretty Sound Loud Blog</em> will bring together different writers to share their thoughts on creativity. The blog is hosted on the social media site, Medium.</p>
+				<p><a href="https://medium.com/pretty-sound-loud" target="_blank" class="btn" id="btn-blog">Go to the Blog</a></p>
+			</div>
+		</div>
+		<footer>
+			<p>&copy; 2019 Pretty Sound Loud | Team members log in <a href="#">here</a>.</p>
+		</footer>
+		<script>
+			function activate() {
+				if(document.getElementById('menu-toggle').checked==false){
+					document.getElementById('box-menu').style.transform='scale(0)';
+					document.getElementById('box-social').style.transform='scale(0)';
+					document.getElementById('box-empty').style.transform='scale(0)';
+					document.getElementById('hamburg').style.boxShadow='3px 3px 7px rgba(146,146,146,1)';
+				}else if(document.getElementById('menu-toggle').checked==true){
+					document.getElementById('box-menu').style.transform='scale(1)';
+					document.getElementById('box-social').style.transform='scale(1)';
+					document.getElementById('box-empty').style.transform='scale(1)';
+					document.getElementById('hamburg').style.boxShadow='none';
+				}
+			}
+		</script>
+	</body>
+</html>
